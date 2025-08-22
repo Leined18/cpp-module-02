@@ -12,9 +12,9 @@ int	main(void)
 	std::cout << c.getRawBits() << std::endl;
 	return (0); /** Destructors called at the end of scope */
 
-	a.setRawBits(1); /** Set raw bits for object a */
-	b.setRawBits(2); /** Set raw bits for object b */
-	c.setRawBits(3); /** Set raw bits for object c */
+	a.setRawBits(1);
+	b.setRawBits(2);
+	c.setRawBits(3);
 
 	Fixed d(a); /** Copy constructor called for object d */
 	std::cout << a.getRawBits() << std::endl;

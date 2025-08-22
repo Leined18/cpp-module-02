@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danpalac <danpalac@student.42.fr>          +#+  +:+       +#+        */
+/*   By: daniel <daniel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 12:16:07 by danpalac          #+#    #+#             */
-/*   Updated: 2025/08/21 12:16:08 by danpalac         ###   ########.fr       */
+/*   Updated: 2025/08/22 13:39:22 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,18 @@
 /** Constructor por defecto */
 Fixed::Fixed() : _value(0)
 {
+	std::cout << "Default constructor called" << std::endl;
 }
 /** Constructor desde int */
 Fixed::Fixed(const int n)
 {
+	std::cout << "Int constructor called" << std::endl;
 	_value = n << _fractionalBits;
 }
 /** Constructor desde float */
 Fixed::Fixed(const float f)
 {
+	std::cout << "Float constructor called" << std::endl;
 	_value = roundf(f * (1 << _fractionalBits));
 }
 /** Constructor de copia */
