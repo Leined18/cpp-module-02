@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <daniel@student.42.fr>              +#+  +:+       +#+        */
+/*   By: danpalac <danpalac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 12:10:53 by danpalac          #+#    #+#             */
-/*   Updated: 2025/08/22 13:32:53 by daniel           ###   ########.fr       */
+/*   Updated: 2025/08/25 09:20:19 by danpalac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ int Fixed::toInt(void) const
 	return (_value >> _fractionalBits);
 }
 
-/** Sobrecarga de << */
+/** Sobrecarga de << Funcion externa, por std::ostream*/
 std::ostream &operator<<(std::ostream &os, const Fixed &fixed)
 {
 	os << fixed.toFloat();

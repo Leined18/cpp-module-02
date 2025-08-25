@@ -63,8 +63,10 @@ class Fixed
 	Fixed operator--(int);
 
 	/* =============================
-		Funciones estáticas min/max
+		Funciones estáticas min/max 
 	============================= */
+	// static no pertenece a ninguna instancia
+	// se llama con Fixed::min(a, b);
 	static Fixed &min(Fixed &a, Fixed &b);
 	static const Fixed &min(const Fixed &a, const Fixed &b);
 	static Fixed &max(Fixed &a, Fixed &b);
